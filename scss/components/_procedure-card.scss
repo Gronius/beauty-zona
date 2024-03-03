@@ -1,0 +1,27 @@
+.procedure-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    position: absolute;
+    left: 33.43%;
+    right: 22.38%;
+    top: 81.58%;
+    bottom: 7.02%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 22px;
+    line-height: 26px;
+    /* or 118% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--beauty-landing-2);
+  }
+  &__img {
+    border-radius: 0px 110px 0px 110px;
+  }
+}

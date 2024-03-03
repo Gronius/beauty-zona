@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>beauty-zona</title>
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    /> -->
   </head>
   <body>
     <header class="header">
@@ -49,24 +49,27 @@
     </header>
     <main>
       <section class="hero-section">
-        <div class="container">
-          <p>Косметологічна клініка</p>
-          <h1>beauty zone</h1>
-          <button class="button" type="button">Замовити дзвінок</button>
-          <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+        <div class="container hero-section__container">
+          <p class="hero-section__description">Косметологічна клініка</p>
+          <h1 class="hero-section__title">Beauty Zone</h1>
+          <div class="hero-section__order">
+            <button class="hero__button button modal-btn-open" type="button">Замовити дзвінок</button>
+          <p class="hero-section__invite">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+          </div>
+          
         </div>
       </section>
-      <section class="proposition-section">
+      <section class="proposition-section section" id="proposition-section">
         <div class="container">
           <div class="proposition-section__container">
             <div class="proposition-section__content">
-              <h2>Перевтілюйтесь в beauty zone!</h2>
-              <p>
+              <h2 class="proposition-section__title section__title">Перевтілюйтесь в <span class="text-brand">Beauty Zone!</span></h2>
+              <p class="proposition-section__text">
                 Наша косметологічна клініка пропонує вам професійні послуги з
                 догляду за шкірою обличчя та тіла.
               </p>
-              <p>
-                B beauty zone ми гарантуємо найвищі стандарти якості та приємний
+              <p class="proposition-section__text">
+                B <b>Beauty Zone</b>  ми гарантуємо найвищі стандарти якості та приємний
                 сервіс. Наші косметологічні процедури та препарати допоможуть
                 вам підтримувати свою красу та молодість. З нами краса назавжди!
               </p>
@@ -76,19 +79,31 @@
               src="./images/one-two-face 1x.png"
               alt="лице жінкі до і після процедур"
             />
+            <svg class="proposition-section__star-big" width="64" height="64">
+              <use href="./images/stars.svg#icon-Star-1"></use>
+            </svg>
+
+              <svg class="proposition-section__star-medium" width="40" height="40">
+              <use href="./images/stars.svg#icon-Star-2"></use>
+            </svg>
+              <svg class="proposition-section__star-small" width="30" height="30">
+              <use href="./images/stars.svg#icon-Star-3"></use>
+            </svg>
+
           </div>
         </div>
       </section>
-      <section class="advantages-section">
+      <section class="advantages-section section" id="advantages-section">
         <div class="container">
           <div class="advantages-section__container">
-            <h2>Чому люди обирають нас</h2>
-            <ul>
-              <li>
-                <div>
+            <h2 class="advantages-section__title section__title">
+              Чому люди <span class="text-brand">обирають нас</span></h2>
+            <ul class="advantages-section__list">
+              <li class="advantages-section__item" >
+                <div class="advantages-section__link">
                   <img
                     src="./images/choce-icons/game-icons_materials-science.svg"
-                    alt=""
+                    alt="" width="48" height="48"
                   />
                   <p>
                     Всі наші косметологи мають вищу медичну освіту та стаж
@@ -96,11 +111,11 @@
                   </p>
                 </div>
               </li>
-              <li>
-                <div>
+              <li class="advantages-section__item" >
+                <div class="advantages-section__link">
                   <img
                     src="./images/choce-icons/medicinecosmeticsbottletreatment_109776 1.svg"
-                    alt=""
+                    alt=""  width="48" height="48"
                   />
                   <p>
                     Використовуємо тільки професійне обладнання та косметику,
@@ -108,9 +123,10 @@
                   </p>
                 </div>
               </li>
-              <li>
-                <div>
-                  <img src="./images/choce-icons/ph_crown-light.svg" alt="" />
+              <li class="advantages-section__item" >
+                <div class="advantages-section__link">
+                  <img src="./images/choce-icons/ph_crown-light.svg"
+                   alt=""  width="48" height="48" />
                   <p>
                     Наша мета - підкреслити переваги та приховати недоліки, а не
                     переробити
@@ -121,46 +137,55 @@
           </div>
         </div>
       </section>
-      <section class="procedures-section">
+      <section class="procedures-section section" id="procedures-section">
         <div class="container">
-          <h2 class="procedures-section__title">Наші процедури</h2>
+          <h2 class="procedures-section__title section__title">
+            Наші <span class="text-brand">процедури</span>
+          </h2>
           <div class="procedures-section__slider">
             <button
               class="procedures-section__button carousel-button prev"
               type="button"
             >
               <svg width="16" height="16">
-                <use href="./images/icons.svg.svg#icon-arrow"></use>
+                <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
             <div class="procedures-section__container swiper-container">
+              
               <ul class="procedures-section__list">
                 <li class="swiper-slide">
                   <article class="procedure-card">
-                    <img src="./images/image-1570.jpg" alt="" />
-                    <p>Маски для обличчя</p>
+                    <img class="procedure-card__img" src="./images/image-1572.jpg" alt="" />
+                    <p class="procedure-card__text">Маски<br> для обличчя</p>
                   </article>
                 </li>
                 <li class="swiper-slide">
                   <article class="procedure-card">
-                    <img src="./images/image-1571.jpg" alt="" />
-                    <p>Ін'єкції для обличчя</p>
+                    <img class="procedure-card__img" src="./images/image-1570.jpg" alt="" />
+                    <p class="procedure-card__text">Ін'єкції<br> для обличчя</p>
                   </article>
                 </li>
                 <li class="swiper-slide">
                   <article class="procedure-card">
-                    <img src="./images/image-1572.jpg" alt="" />
-                    <p>Очищення обличчя</p>
+                    <img class="procedure-card__img" src="./images/image-1571.jpg" alt="" />
+                    <p class="procedure-card__text">Очищення обличчя</p>
                   </article>
                 </li>
+                 <!-- <li class="swiper-slide">
+                  <article class="procedure-card">
+                    <img class="procedure-card__img" src="./images/image-1571.jpg" alt="" />
+                    <p class="procedure-card__text">Очищення обличчя</p>
+                  </article>
+                </li> -->
               </ul>
             </div>
             <button
-              class="procedures-section__button carousel-button prev"
+              class="procedures-section__button carousel-button next"
               type="button"
             >
               <svg width="16" height="16">
-                <use href="./images/icons.svg.svg#icon-arrow"></use>
+                <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>

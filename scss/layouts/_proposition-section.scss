@@ -1,0 +1,55 @@
+.proposition-section {
+  padding: 60px 100px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 672px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+  }
+
+  &__title {
+    width: 529px;
+    height: 148px;
+  }
+  &__text {
+    font-family: 'Roboto';
+    font-size: 22px;
+    line-height: 1.7;
+    color: var(--beauty-landing-2-c1);
+    order: 1;
+    flex-grow: 0;
+  }
+
+  &__star-big {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 980px;
+    top: 1210px;
+    transform: rotate(-30deg);
+  }
+
+  &__star-medium {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1312px;
+    top: 890px;
+    transform: rotate(30deg);
+  }
+  &__star-small {
+     position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 1300px;
+    top: 1116px;
+    transform: rotate(30deg);
+  }
+}

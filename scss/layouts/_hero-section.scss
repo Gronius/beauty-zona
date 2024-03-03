@@ -1,0 +1,42 @@
+.hero-section {
+  background-image: url('../images/herofon.jpg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  padding: 200px 0 200px 0;
+
+  &__container {
+    justify-content: center;
+    padding-left: 80px;
+  }
+
+  &__description {
+    font-size: 18px;
+    color: var(--beauty-landing-2-c1);
+    margin-bottom: 16px;
+  }
+  &__title {
+    width: 529px;
+    font-family: var(--third-family);
+    font-size: 114px;
+    font-weight: bold;
+    line-height: 100%;
+    color: var(--beauty-landing-2-s2);
+    margin-bottom: 40px;
+  }
+
+  &__order {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  &__invite {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--beauty-landing-2-c3);
+  }
+}
