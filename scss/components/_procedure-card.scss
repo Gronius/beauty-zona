@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  height: 456px;
 
   &__text {
     position: absolute;
@@ -22,6 +23,12 @@
     color: var(--beauty-landing-2);
   }
   &__img {
-    border-radius: 0px 110px 0px 110px;
+        position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 130px 0px 130px;
   }
 }
