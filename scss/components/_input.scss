@@ -1,0 +1,35 @@
+.input {
+  position: relative;
+
+  &__control {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 13px;
+    border-radius: 32px;
+    border: 2px solid var(--beauty-landing-2);
+    background-color: var(--beauty-landing-2-c6);
+  }
+}
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 310px;
+  height: 301px;
+}
+
+/* Ваше ім'я та прізвище */
+// position: absolute;
+// left: 10.6%;
+// right: 10.6%;
+// top: 34.62%;
+// bottom: 34.62%;
+// font-family: 'Roboto';
+// font-style: normal;
+// font-weight: 400;
+// font-size: 13px;
+// line-height: 15px;
+
+/* beauty landing 2/background */
+// color: #FFFFFF;

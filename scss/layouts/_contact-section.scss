@@ -1,0 +1,40 @@
+.contact-section {
+  width: 1060px;
+  padding: 30px 0 46px 0;
+  margin: 0 auto;
+
+
+  &__title {
+    text-align: center;
+  }
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
+  &__map {
+    flex-shrink: 0;
+    width: 600px;
+    height: 481px;
+    border: none;
+    border-radius: 32px;
+  }
+  &__form {
+    padding: 48px 56px;
+    background-color: var(--beauty-landing-2-c6);
+    border-radius: 32px;
+  }
+  &__form-title {
+    width: 274px;
+    height: 52px;
+    text-align: center;
+    /* Запишіться безкоштовно та отримайте подарунок */
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--beauty-landing-2);
+    margin-bottom: 32px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
