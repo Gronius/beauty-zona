@@ -1,0 +1,80 @@
+.footer {
+  padding: 56px 100px;
+  position: relative;
+  background-color: var(--beauty-landing-2-c6);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  &__nav,
+  &__adress {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    flex-basis: 50%;
+  }
+  &__logo {
+    flex-grow: 1;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+    color: var(--beauty-landing-2);
+  }
+  &__menu-link {
+    color: var(--beauty-landing-2);
+    width: 203px;
+    height: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  &__adress-contacts {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+    color: var(--beauty-landing-2);
+  }
+  &__adress-list {
+    width: 203px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__adress-link {
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--beauty-landing-2);
+    text-decoration: none;
+  }
+  &__socials {
+    display: flex;
+    gap: 24px;
+  }
+  &__adress-icon {
+    fill: var(--beauty-landing-2);
+  }
+  &__adress-copyright {
+    font-size: 14px;
+    color: var(--beauty-landing-2-s5);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/photo-footer.png');
+    background-repeat: no-repeat;
+    width: 247px;
+    height: 153px;
+    bottom: 0px;
+    right: 0px;
+    overflow: hidden;
+  }
+}
