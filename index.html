@@ -20,10 +20,10 @@
               <img src="./images/logo.svg" alt="логотип beauty-zona" />
             </a>
             <ul class="header__menu">
-              <li class="link">Про нас</li>
-              <li class="link">Чому ми</li>
-              <li class="link">Наші процедури</li>
-              <li class="link">Контакти</li>
+              <li><a class="link" href="">Про нас</a></li>
+              <li><a class="link" href="">Чому ми</a></li>
+              <li><a class="link" href="">Наші процедури</a></li>
+              <li><a class="link" href="">Контакти</a></li>
             </ul>
 
             <div class="header__socials">
@@ -44,6 +44,27 @@
               </a>
             </div>
           </nav>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a class="mobile-menu__logo" href="/">
+              <img src="./images/logo.svg" alt="логотип beauty-zona" />
+            </a>
+            <ul class="mobile-menu__list">
+              <li><a class="mobile-menu__link" href="">Про нас</a></li>
+              <li><a class="mobile-menu__link" href="">Чому ми</a></li>
+              <li><a class="mobile-menu__link" href="">Наші процедури</a></li>
+              <li><a class="mobile-menu__link" href="">Контакти</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -62,7 +83,7 @@
           </div>
         </div>
       </section>
-      <section class="proposition-section section" id="proposition-section">
+      <!-- <section class="proposition-section section" id="proposition-section">
         <div class="container">
           <div class="proposition-section__container">
             <div class="proposition-section__content">
@@ -101,8 +122,8 @@
             </svg>
           </div>
         </div>
-      </section>
-      <section class="advantages-section section" id="advantages-section">
+      </section> -->
+      <!-- <section class="advantages-section section" id="advantages-section">
         <div class="container">
           <div class="advantages-section__container">
             <h2 class="advantages-section__title section__title">
@@ -154,8 +175,8 @@
             </ul>
           </div>
         </div>
-      </section>
-      <section class="procedures-section section" id="procedures-section">
+      </section> -->
+      <!-- <section class="procedures-section section" id="procedures-section">
         <div class="procedures__container">
           <h2 class="procedures-section__title section__title">
             Наші <span class="text-brand">процедури</span>
@@ -235,8 +256,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="contact-section">
+      </section> -->
+      <!-- <section class="contact-section">
         <div class="container">
           <h2 class="contact-section__title section__title">
             Як нас <span class="text-brand">знайти</span>
@@ -314,9 +335,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-     <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <nav class="footer__nav">
@@ -387,9 +408,71 @@
           </address>
         </div>
       </div>
-    </footer> 
+    </footer> -->
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close" type="button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-close-icon"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__text">
+          Запишіться <span class="text-brand">безкоштовно</span> та отримайте
+          подарунок
+        </p>
+        <form class="modal__form" name="modal-form" autocomplete="off">
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-name">
+            </label>
+            <input
+              class="input__control"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Ваше ім'я та прізвище"
+              required
+            />
+          </div>
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-tel"> </label>
+            <input
+              class="input__control"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Ваш номер телефону"
+              pattern="^\+[0-9]{12}"
+              required
+            />
+          </div>
+          <div class="modal__form-field input">
+            <label class="input__label visually-hidden" for="user-email">
+            </label>
+            <input
+              class="input__control"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Ваша електронна пошта"
+              required
+            />
+          </div>
+          <button class="modal__button button" type="submit">
+            Записатись безкоштовно
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь з
+            <a class="form-terms-link" href="#">політикою конфіденційності</a>
+          </p>
+        </form>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,39 @@
+{
+  "git.ignoreMissingGitWarning": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.statusBar.visible": true,
+  "files.defaultLanguage": "html",
+  "workbench.editor.tabSizing": "shrink",
+  "editor.detectIndentation": false,
+  "editor.glyphMargin": false,
+  "editor.smoothScrolling": true,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.suggestOnTriggerCharacters": false,
+  "terminal.integrated.fontSize": 15,
+  "window.zoomLevel": 1,
+  "editor.wordWrap": "on",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.minimap.enabled": true,
+  "editor.fontSize": 20,
+  "editor.tabSize": 2,
+  "editor.hover.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "editor.formatOnPaste": true,
+  "editor.snippetSuggestions": "top",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    }
+  ],
+  "workbench.preferredDarkColorTheme": "Material Theme",
+  "files.autoSave": "onFocusChange",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "ecsstractor_port.bem_nesting": true,
+  "ecsstractor_port.add_comment": false,
+  "ecsstractor_port.empty_line_before_nested_selector": false,
+  "ecsstractor_port.brackets_newline_after": false,
+  "ecsstractor_port.indentation": " "
+}

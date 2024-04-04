@@ -1,3 +1,4 @@
+@import './utils/backdrop';
 @import './utils/fonts';
 @import './utils/variables';
 @import './utils/text';
@@ -16,6 +17,8 @@
 @import './layouts/hero-section';
 @import './layouts/footer';
 @import './layouts/form-terms';
+@import './layouts/mobile-menu';
+@import './layouts/modal';
 @import './layouts/procedures-section';
 @import './layouts/proposition-section';
 @import './layouts/section';
