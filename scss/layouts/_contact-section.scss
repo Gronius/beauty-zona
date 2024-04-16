@@ -1,27 +1,63 @@
 .contact-section {
-  width: 1080px;
+  max-width: 1080px;
   padding: 30px 0 96px 0;
   margin: 0 auto;
-
 
   &__title {
     text-align: center;
   }
   &__container {
     display: flex;
-    gap: 32px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+    }
   }
   &__map {
     flex-shrink: 0;
-    width: 600px;
-    height: 481px;
+    width: 100%;
+    height: 232px;
     border: none;
-    border-radius: 32px;
+    border-radius: none;
+    padding: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+      width: 500px;
+      height: 400px;
+      border-radius: 32px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 600px;
+      height: 481px;
+    }
   }
   &__form {
-    padding: 48px 56px;
+    padding: 42px 20px;
+    margin: 0 20px;
     background-color: var(--beauty-landing-2-c6);
     border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 500px;
+      padding: 48px 56px;
+      background-color: var(--beauty-landing-2-c6);
+      border-radius: 32px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      padding: 48px 56px;
+      background-color: var(--beauty-landing-2-c6);
+      border-radius: 32px;
+    }
   }
   &__form-title {
     width: 274px;
@@ -36,5 +72,18 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+}
+.container-contact {
+  // width: 100%;
+  // max-width: 1240px;
+  margin: 0;
+  padding: 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
   }
 }

@@ -1,9 +1,8 @@
 .advantages-section {
-  background-image: url('/images/background-suffix.png') ;
+  background-image: url('/images/background-suffix.png');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-
 
   &__container {
     display: flex;
@@ -11,27 +10,54 @@
     justify-content: center;
     gap: 48px;
     padding: 130px 0 40px 0;
-    width: 1060px;
+    max-width: 1060px;
     margin: 0 auto;
   }
 
   &__title {
     text-align: center;
-    width: 432px;
-    height: 148px;
+    width: 310px;
+    height: 76px;
     margin: 0 auto;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: center;
+      width: 432px;
+      height: 148px;
+      margin: 0 auto;
+    }
   }
+
+  /* Чому люди обирають нас */
+
   &__list {
     display: flex;
-    gap: 56px;
-    
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid #1b1919;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      flex-direction: row;
+      // gap: 26px;
+      justify-content: space-between;
+    }
   }
   &__item {
-    flex-basis: calc((100% - 112px) / 3);
+    width: 316px;
+    // flex-basis: calc((100% - 112px) / 3);
     padding: 24px 32px;
     background: var(--beauty-landing-2-background);
     border-radius: 32px;
-    
+    border: 1px solid #1b1919;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 112px) / 3);
+      padding: 24px 32px;
+      background: var(--beauty-landing-2-background);
+      border-radius: 32px;
+    }
   }
 
   &__link {
@@ -41,5 +67,4 @@
     align-items: center;
     gap: 8px;
   }
-  
 }
