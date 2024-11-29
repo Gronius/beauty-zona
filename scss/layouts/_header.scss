@@ -9,6 +9,7 @@
   top: 0px;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(5px);
+  z-index: 99;
 
   &__container {
     display: flex;
